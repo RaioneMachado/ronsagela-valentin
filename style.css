@@ -691,6 +691,7 @@ body {
   min-width: 300px;
   position: relative;
   animation: fadeInRight 1.2s ease-out 0.3s both;
+  padding: 25px; /* Espaço para as molduras externas */
 }
 
 @keyframes fadeInRight {
@@ -704,60 +705,142 @@ body {
   }
 }
 
+/* Imagem principal */
 .hero-img img {
   width: 100%;
   max-width: 500px;
-  border-radius: 12px; /* Bordas mais suaves */
+  border-radius: 15px; /* Bordas moderadamente arredondadas */
   box-shadow: 
-    0 15px 35px rgba(0, 0, 0, 0.15),
-    0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   z-index: 2;
-  border: 8px solid rgba(255, 255, 255, 0.95);
-  filter: brightness(1.02) contrast(1.01);
+  border: 8px solid #FFFFFF;
+  filter: brightness(1.05) contrast(1.05);
+  display: block;
 }
 
+/* MOLDURA NO CANTO SUPERIOR DIREITO (por fora) */
 .hero-img::before {
   content: '';
   position: absolute;
-  width: calc(100% + 16px);
-  height: calc(100% + 16px);
-  background: linear-gradient(135deg, rgba(212, 167, 106, 0.1), rgba(232, 216, 182, 0.05));
-  border-radius: 16px;
-  top: 8px;
-  right: 8px;
-  z-index: 1;
-  opacity: 0.15;
-}
-
-.hero-img::after {
-  content: '🧘‍♀️';
-  position: absolute;
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.95);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -15px;
-  left: -15px;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #D4A76A, #B89A5E);
+  border-radius: 0 15px 0 40px;
   z-index: 3;
+  transform: translate(15px, -15px);
   box-shadow: 
-    0 6px 15px rgba(0, 0, 0, 0.1),
-    inset 0 1px 2px rgba(255, 255, 255, 0.8);
-  color: #4D5131;
-  font-weight: 300;
+    0 10px 25px rgba(212, 167, 106, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
 }
 
-.hero-img:hover img {
-  transform: translateY(-8px);
+/* Detalhe decorativo na moldura superior */
+.hero-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: 
+    linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 43%, transparent 43%),
+    linear-gradient(135deg, #D4A76A, #B89A5E);
+  border-radius: 0 15px 0 40px;
+  z-index: 3;
+  transform: translate(15px, -15px);
   box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.2),
-    0 8px 20px rgba(0, 0, 0, 0.12);
+    0 10px 25px rgba(212, 167, 106, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+/* MOLDURA NO CANTO INFERIOR ESQUERDO (por fora) */
+.hero-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6B8E5E, #5A7A4E);
+  border-radius: 40px 0 15px 0;
+  z-index: 3;
+  transform: translate(-15px, 15px);
+  box-shadow: 
+    0 10px 25px rgba(107, 142, 94, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Detalhe decorativo na moldura inferior */
+.hero-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: 
+    linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 43%, transparent 43%),
+    linear-gradient(135deg, #6B8E5E, #5A7A4E);
+  border-radius: 40px 0 15px 0;
+  z-index: 3;
+  transform: translate(-15px, 15px);
+  box-shadow: 
+    0 10px 25px rgba(107, 142, 94, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Efeito de brilho sutil atrás da imagem */
+.hero-img .img-glow {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background: radial-gradient(circle at center, rgba(212, 167, 106, 0.15) 0%, transparent 70%);
+  z-index: 1;
+  opacity: 0.5;
+  filter: blur(10px);
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+/* Efeitos de hover */
+.hero-img:hover img {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 30px 60px rgba(0, 0, 0, 0.3),
+    0 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
   border-color: #FFFFFF;
+  filter: brightness(1.08) contrast(1.08);
+}
+
+.hero-img:hover::before {
+  transform: translate(20px, -20px) rotate(5deg);
+  box-shadow: 
+    0 15px 35px rgba(212, 167, 106, 0.5),
+    inset 0 3px 8px rgba(255, 255, 255, 0.4);
+}
+
+.hero-img:hover::after {
+  transform: translate(-20px, 20px) rotate(-5deg);
+  box-shadow: 
+    0 15px 35px rgba(107, 142, 94, 0.5),
+    inset 0 3px 8px rgba(255, 255, 255, 0.4);
 }
 
 /* Elemento decorativo sutil */
@@ -772,6 +855,69 @@ body {
   z-index: 1;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-img {
+    padding: 20px;
+  }
+  
+  .hero-img img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hero-img::before {
+    width: 60px;
+    height: 60px;
+    transform: translate(10px, -10px);
+  }
+  
+  .hero-img::after {
+    width: 50px;
+    height: 50px;
+    transform: translate(-10px, 10px);
+  }
+  
+  .hero-img:hover::before {
+    transform: translate(15px, -15px) rotate(5deg);
+  }
+  
+  .hero-img:hover::after {
+    transform: translate(-15px, 15px) rotate(-5deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    padding: 15px;
+  }
+  
+  .hero-img img {
+    max-width: 320px;
+    border-width: 6px;
+  }
+  
+  .hero-img::before {
+    width: 50px;
+    height: 50px;
+    transform: translate(8px, -8px);
+  }
+  
+  .hero-img::after {
+    width: 40px;
+    height: 40px;
+    transform: translate(-8px, 8px);
+  }
+  
+  .hero-img:hover::before {
+    transform: translate(12px, -12px) rotate(5deg);
+  }
+  
+  .hero-img:hover::after {
+    transform: translate(-12px, 12px) rotate(-5deg);
+  }
+}
 /* ADICIONE ESTA LINHA NO HEAD DO HTML PARA A FONTE PLAYFAIR DISPLAY */
 /* <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> */
 /* ===== SEÇÕES ===== */
