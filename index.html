@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosângela Valentim – Psicanalista Clínica | Psicanálise & Autoconhecimento</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Psicanalista Rosângela Valentim - Atendimento especializado em psicanálise clínica, inteligência emocional e desenvolvimento pessoal. Consultas presenciais e online.">
+    <meta name="keywords" content="psicanalista, psicanálise, inteligência emocional, autoconhecimento, ansiedade, depressão, desenvolvimento pessoal">
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <a href="#inicio" class="logo">
+            <i class="fas fa-brain logo-icon"></i>
+            Rosângela Valentim
+        </a>
+        <nav class="nav-menu">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#atendimento">Atendimento</a>
+            <a href="#contato">Contato</a>
+            <button class="btn-agendar" onclick="scrollToContact()">
+                <i class="fas fa-calendar-check"></i> Agendar Sessão
+            </button>
+        </nav>
+        <div class="menu-mobile" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="nav-indicator" id="navIndicator"></div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="#inicio" onclick="toggleMenu()">Início</a>
+    <a href="#sobre" onclick="toggleMenu()">Sobre mim</a>
+    <a href="#tratamentos" onclick="toggleMenu()">Tratamentos</a>
+    <a href="#diferenciais" onclick="toggleMenu()">Diferenciais</a>
+    <a href="#atendimento" onclick="toggleMenu()">Atendimento</a>
+    <a href="#contato" onclick="toggleMenu()">Contato</a>
+    <button class="btn-agendar" onclick="scrollToContact(); toggleMenu()" style="margin: 20px auto; display: block;">
+        <i class="fas fa-calendar-check"></i> Agendar Sessão
+    </button>
+</div>
+
+<!-- HERO SECTION -->
+<section id="inicio" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text fade-in">
+            <h2>ROSÂNGELA VALENTIM <br><span class="highlight-text">Psicanalista Clínica</span></h2>
+            <span class="hero-subtitle">Escuta Profunda • Transformação • Cura Emocional</span>
+            
+            <p class="quote-text">"Ouvir sem julgamentos é a mais poderosa ferramenta de cura"</p>
+            
+            <p>Com formação em <strong>Psicanálise Clínica</strong>, <strong>Inteligência Emocional</strong> e <strong>Teologia</strong>, ofereço um atendimento humanizado e empático, criando um espaço seguro para explorar suas emoções e promover autoconhecimento.</p>
+            
+            <div class="hero-btns">
+                <a href="#contato" class="btn-primary">
+                    <i class="fas fa-calendar-alt"></i> Agendar Consulta
+                </a>
+            </div>
+        </div>
+        <div class="hero-img fade-in">
+            <img src="imagens/ronsagela.jpeg" alt="Psicanalista Rosângela Valentim" />
+        </div>
+    </div>
+    <div class="decorative-line"></div>
+</section>
+    <!-- TRATAMENTOS -->
+ <!-- Seção de Serviços -->
+<section id="tratamentos" class="servicos">
+    <div class="container">
+        <h2 class="section-title">Abordagens Terapêuticas</h2>
+        <p class="section-subtitle">Trabalhos especializados para diferentes necessidades emocionais</p>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="card-decoration"></div>
+                
+                <div class="card-icon">
+                    <i class="fas fa-wind"></i>
+                </div>
+                
+                <h3>Ansiedade e Estresse</h3>
+                
+                <p>Técnicas especializadas para reduzir sintomas de ansiedade, crises de pânico e estresse emocional crônico.</p>
+                
+                <p class="therapy-quote">Encontrar calma em meio à tempestade</p>
+                
+                <div class="card-benefits">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Técnicas de regulação emocional</li>
+                        <li><i class="fas fa-check"></i> Mindfulness e relaxamento</li>
+                        <li><i class="fas fa-check"></i> Controle de pensamentos ansiosos</li>
+                    </ul>
+                </div>
+                
+              
+            </div>
+
+            <div class="card">
+                <div class="card-decoration"></div>
+                
+                <div class="card-icon">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                
+                <h3>Depressão e Autoestima</h3>
+                
+                <p>Acompanhamento terapêutico para reconstrução emocional e recuperação do prazer pela vida.</p>
+                
+                <p class="therapy-quote">Reencontrar a luz em dias cinzentos</p>
+                
+                <div class="card-benefits">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Reestruturação cognitiva</li>
+                        <li><i class="fas fa-check"></i> Ativação comportamental</li>
+                        <li><i class="fas fa-check"></i> Desenvolvimento de autoestima</li>
+                    </ul>
+                </div>
+                
+              
+            </div>
+
+            <div class="card">
+                <div class="card-decoration"></div>
+                
+                <div class="card-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                
+                <h3>Relacionamentos</h3>
+                
+                <p>Terapia para desenvolvimento de comunicação assertiva e construção de vínculos saudáveis.</p>
+                
+                <p class="therapy-quote">Cultivar conexões que nutrem</p>
+                
+                <div class="card-benefits">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Comunicação não-violenta</li>
+                        <li><i class="fas fa-check"></i> Resolução de conflitos</li>
+                        <li><i class="fas fa-check"></i> Fortalecimento de vínculos</li>
+                    </ul>
+                </div>
+                
+        
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais" class="diferenciais-section">
+    <div class="granular-dots"></div>
+    
+    <div class="container">
+        <h2 class="section-title">Principais diferenciais</h2>
+        <p class="section-subtitle">O que torna minha abordagem única e eficaz</p>
+        
+        <div class="diferenciais-cards">
+            <div class="diferencial-card stagger-item">
+                <div class="diferencial-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Atendimento personalizado</h3>
+                <p>Cada pessoa é única e recebe atenção individualizada de acordo com suas necessidades específicas e ritmo próprio.</p>
+            </div>
+
+            <div class="diferencial-card stagger-item">
+                <div class="diferencial-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <h3>Abordagem em Psicanálise</h3>
+                <p>Trabalho fundamentado na teoria psicanalítica clássica e contemporânea para uma compreensão profunda do ser.</p>
+            </div>
+
+            <div class="diferencial-card stagger-item">
+                <div class="diferencial-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Flexibilidade no atendimento</h3>
+                <p>Horários adaptáveis e opções de atendimento presencial e online, proporcionando maior comodidade e acessibilidade.</p>
+            </div>
+
+            <div class="diferencial-card stagger-item">
+                <div class="diferencial-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Compromisso com o autoconhecimento</h3>
+                <p>Processo terapêutico focado no desenvolvimento do autoconhecimento como ferramenta essencial de transformação pessoal.</p>
+            </div>
+        </div>
+        
+        <div class="diferenciais-text">
+            <p>Meu trabalho é voltado para criar um espaço seguro e empático para escuta, onde você se sinta verdadeiramente acolhido para explorar pensamentos e emoções.</p>
+            <p>Com formação em Psicanálise Clínica, Inteligência Emocional e Teologia, ofereço um atendimento totalmente personalizado, integrando diferentes perspectivas do ser humano. Minha verdadeira paixão sempre foi as relações humanas e o desenvolvimento do bem-estar de cada pessoa.</p>
+        </div>
+        
+        <div class="diferenciais-btn">
+            <a href="#contato" class="btn-primary">
+                <i class="fas fa-calendar-alt"></i> Agendar sua consulta
+            </a>
+        </div>
+    </div>
+</section>
+
+ <!-- MODALIDADES DE ATENDIMENTO -->
+<section id="atendimento" class="atendimento-section">
+    <div class="container">
+        <h2 class="section-title">Conheça os meus Modelos de Atendimento</h2>
+        <p class="section-subtitle">Escolha a modalidade que melhor se adapta às suas necessidades e estilo de vida</p>
+        
+        <div class="atendimento-decoration"></div>
+        <div class="atendimento-decoration"></div>
+        <div class="atendimento-decoration"></div>
+        
+        <div class="atendimento-cards">
+            <div class="atendimento-card stagger-item">
+                <div class="card-header">
+                    <img src="imagens/local de atendimento.jpeg" alt="Consultório Psicológico em Bauru">
+                    <div class="card-header-overlay">
+                        <div class="card-icon-container">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-content">
+                    <h3>Atendimento Presencial</h3>
+                    
+                    <div class="local-info">
+                        Alameda Doutor Octávio Pinheiro Brisola, 12-67<br>
+                        Vila Nova Cidade Universitária<br>
+                        Bauru-SP
+                    </div>
+                    
+                    <p>Atendimento realizado em um consultório cuidadosamente preparado, com ambiente acolhedor, confidencial e seguro, projetado para proporcionar total conforto durante as sessões terapêuticas.</p>
+                    
+                    <p class="destaque">Conexão humana em um espaço físico dedicado ao seu bem-estar</p>
+                    
+                    <a href="#contato" class="card-link">
+                        <i class="fas fa-calendar-alt"></i> Agendar consulta presencial
+                    </a>
+                </div>
+            </div>
+
+            <div class="atendimento-card stagger-item">
+                <div class="card-header">
+                    <img src="imagens/google meet.png" alt="Atendimento Online por Videoconferência">
+                    <div class="card-header-overlay">
+                        <div class="card-icon-container">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-content">
+                    <h3>Atendimento Online</h3>
+                    
+                    <div class="local-info">
+                        Via Google Meet<br>
+                        Plataforma segura e confidencial
+                    </div>
+                    
+                    <p>Atendimento remoto por videoconferência, mantendo a mesma qualidade, ética e eficácia do atendimento presencial. Flexibilidade e comodidade no conforto do seu ambiente familiar.</p>
+                    
+                    <p class="destaque">Terapia acessível, onde quer que você esteja</p>
+                    
+                    <a href="#contato" class="card-link">
+                        <i class="fas fa-calendar-alt"></i> Agendar consulta online
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="espaco-atendimento">
+            <h3>Espaço de Atendimento</h3>
+            
+            <p>O ambiente terapêutico é fundamental para o sucesso do tratamento. Meu consultório foi cuidadosamente planejado para oferecer um espaço acolhedor, seguro e confidencial, onde você pode se sentir verdadeiramente à vontade para ser ouvido sem julgamentos.</p>
+            
+            <p class="quote">Priorizo sua segurança e bem-estar em cada sessão, criando um ambiente propício para o desenvolvimento pessoal e emocional. Com uma abordagem empática e humanizada, respeito o ritmo único de cada pessoa em sua jornada de autoconhecimento e transformação.</p>
+            
+            <p>Cada detalhe foi pensado para promover conforto e privacidade, desde a iluminação suave até a disposição dos móveis, tudo com o objetivo de criar um refúgio onde você possa explorar suas emoções com tranquilidade.</p>
+        </div>
+        
+        <div class="atendimento-btn">
+            <a href="#contato" class="btn-primary">
+                <i class="fas fa-calendar-alt"></i> Escolher modalidade e agendar consulta
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE MIM -->
+<section id="sobre" class="sobre-section">
+    <div class="sobre-granulado"></div>
+    
+    <div class="container">
+        <h2 class="section-title">Rosângela Valentim</h2>
+        <p class="section-subtitle">Psicanalista Clínica • Especialista em Relações Humanas</p>
+        
+        <div class="sobre-content">
+            <div class="sobre-imagem">
+                <img src="imagens/sobre mim.jpeg" alt="Rosângela Valentim - Psicanalista Clínica">
+            </div>
+            
+            <div class="sobre-texto">
+                <h3 class="sobre-intro">Filha de Deus, Mãe, Irmã, <span class="sobre-destaque">Amiga Leal e Profissional Dedicada</span></h3>
+                
+                <p class="sobre-trajetoria">Com um amor genuíno pela natureza, viagens, novas culturas e, acima de tudo, pelas conexões humanas. Embora minha formação inicial tenha sido em administração, minha verdadeira vocação sempre residiu nas relações humanas.</p>
+                
+                <div class="sobre-citacao">
+                    "Ouvir sem julgamentos é a mais poderosa ferramenta de cura e desenvolvimento pessoal"
+                </div>
+                
+                <p>Ao longo de 23 anos no segmento varejista, coordenei e supervisionei negócios, destacando-me na comunicação de boas práticas e na obtenção de indicadores positivos em absenteísmo e clima organizacional. Esta experiência me proporcionou uma compreensão profunda das dinâmicas humanas em ambientes profissionais.</p>
+                
+                <p>Nos últimos anos, mergulhei intensamente em meu processo de autoconhecimento e desenvolvimento pessoal, reconectando-me profundamente com minha verdadeira paixão: <span class="sobre-destaque">as relações humanas</span>.</p>
+                
+                <p>Realizei diversos treinamentos especializados em inteligência emocional, teologia e psicanálise clínica, formando uma abordagem integrada e humanizada. Hoje, ofereço um espaço seguro e empático para escuta, onde cada pessoa pode encontrar seu caminho para o bem-estar e autoconhecimento.</p>
+                
+                <div class="sobre-qualidades">
+                    <div class="qualidade-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Empatia Profunda</span>
+                    </div>
+                    <div class="qualidade-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Formação Especializada</span>
+                    </div>
+                    <div class="qualidade-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>Acolhimento Genuíno</span>
+                    </div>
+                    <div class="qualidade-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Transformação Contínua</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sobre-btn">
+            <a href="#contato" class="btn-primary">
+                <i class="fas fa-calendar-alt"></i> Agendar sua consulta de autoconhecimento
+            </a>
+        </div>
+    </div>
+</section>
+ <!-- PERGUNTAS FREQUENTES -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">Tire suas dúvidas sobre o processo terapêutico e atendimento</p>
+        
+        <div class="faq-decoration"></div>
+        <div class="faq-decoration"></div>
+        <div class="faq-decoration"></div>
+        
+        <div class="faq-container">
+            <!-- Pergunta 1 -->
+            <div class="faq-item" onclick="toggleFAQ(1)">
+                <div class="faq-question">
+                    <div class="faq-number">01</div>
+                    <h3>Como sei se preciso de atendimento psicológico?</h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p>A terapia pode ser benéfica se você está passando por:</p>
+                        <ul class="faq-lista">
+                            <li>Sentimentos persistentes de tristeza, ansiedade ou estresse</li>
+                            <li>Dificuldades em relacionamentos pessoais ou profissionais</li>
+                            <li>Problemas de autoestima ou autoconfiança</li>
+                            <li>Momentos de transição ou crise pessoal</li>
+                            <li>Busca por autoconhecimento e desenvolvimento pessoal</li>
+                        </ul>
+                        <div class="faq-destaque">
+                            Não é necessário estar em crise para buscar terapia. O autoconhecimento é um processo contínuo que pode ser iniciado em qualquer momento da vida.
+                        </div>
+                        <p>O primeiro passo é agendar uma consulta inicial, onde avaliaremos juntos suas necessidades e expectativas. Esta sessão serve para nos conhecermos e definir se a terapia pode ser útil para você.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="faq-item" onclick="toggleFAQ(2)">
+                <div class="faq-question">
+                    <div class="faq-number">02</div>
+                    <h3>Quanto tempo dura cada sessão e com qual frequência?</h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p><strong>Duração:</strong> Cada sessão tem duração padrão de 50 minutos. Este tempo é cientificamente estabelecido como ideal para um trabalho terapêutico profundo e eficaz.</p>
+                        
+                        <p><strong>Frequência:</strong> A frequência semanal é recomendada para a maioria dos casos, pois permite:</p>
+                        <ul class="faq-lista">
+                            <li>Continuidade do processo terapêutico</li>
+                            <li>Integração dos insights entre sessões</li>
+                            <li>Desenvolvimento consistente do trabalho</li>
+                            <li>Manutenção do vínculo terapêutico</li>
+                        </ul>
+                        
+                        <div class="faq-destaque">
+                            A frequência pode ser ajustada conforme suas necessidades específicas. Avaliaremos juntos o ritmo ideal para seu processo.
+                        </div>
+                        
+                        <p>Para manutenção ou casos específicos, podemos estabelecer frequências quinzenais. Tudo é combinado de acordo com suas necessidades e disponibilidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="faq-item" onclick="toggleFAQ(3)">
+                <div class="faq-question">
+                    <div class="faq-number">03</div>
+                    <h3>Preciso fazer sessões toda semana?</h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p>A frequência semanal é considerada ideal para a maioria dos processos terapêuticos, pois permite uma continuidade que favorece:</p>
+                        <ul class="faq-lista">
+                            <li>Consolidação dos insights terapêuticos</li>
+                            <li>Manutenção do vínculo terapêutico</li>
+                            <li>Acompanhamento contínuo do progresso</li>
+                            <li>Desenvolvimento consistente do trabalho</li>
+                        </ul>
+                        
+                        <p><strong>Entretanto, a frequência pode ser ajustada de acordo com:</strong></p>
+                        <ul class="faq-lista">
+                            <li>Sua disponibilidade de tempo e recursos</li>
+                            <li>O momento específico do processo</li>
+                            <li>Suas necessidades individuais</li>
+                            <li>Fase de manutenção ou término</li>
+                        </ul>
+                        
+                        <div class="faq-destaque">
+                            O mais importante é encontrar um ritmo sustentável para você. Avaliaremos juntos a frequência que melhor atende suas necessidades.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="faq-item" onclick="toggleFAQ(4)">
+                <div class="faq-question">
+                    <div class="faq-number">04</div>
+                    <h3>O atendimento online é tão eficaz quanto o presencial?</h3>
+                    <div class="faq-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p><strong>Sim, a terapia online mantém a mesma eficácia do atendimento presencial.</strong> Diversas pesquisas científicas comprovam que a terapia online é igualmente eficaz para a maioria das questões psicológicas.</p>
+                        
+                        <p><strong>Vantagens do atendimento online:</strong></p>
+                        <ul class="faq-lista">
+                            <li><strong>Flexibilidade:</strong> Atendimento de qualquer lugar</li>
+                            <li><strong>Comodidade:</strong> Economia de tempo e deslocamento</li>
+                            <li><strong>Acessibilidade:</strong> Para quem tem mobilidade reduzida</li>
+                            <li><strong>Conforto:</strong> No seu próprio ambiente familiar</li>
+                        </ul>
+                        
+                        <div class="faq-destaque">
+                            A escolha entre presencial e online depende apenas da sua preferência pessoal e comodidade. A qualidade do trabalho terapêutico é mantida em ambas as modalidades.
+                        </div>
+                        
+                        <p>Utilizamos a plataforma Google Meet, que oferece total segurança, confidencialidade e qualidade de conexão. Antes da primeira sessão online, faremos um teste técnico para garantir que tudo funcione perfeitamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-message">
+            Não encontrou resposta para sua dúvida? Entre em contato diretamente – estou aqui para ajudar!
+        </div>
+        
+        <div class="faq-btn">
+            <a href="#contato" class="btn-primary">
+                <i class="fas fa-comments"></i> Falar diretamente comigo
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- CONTATO -->
+    <section id="contato" class="contato" style="background-color: var(--cor-fundo);">
+        <div class="container">
+            <h2 class="section-title">Agende sua consulta</h2>
+            
+            <div class="sobre-text">
+                <p>Estou aqui para ajudá-lo em sua jornada de autoconhecimento e transformação. Entre em contato para agendar sua consulta de forma prática e rápida através do WhatsApp. Será um prazer recebê-lo em um espaço acolhedor e seguro.</p>
+            </div>
+            
+            <div class="contact-form">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank" style="text-decoration: none;">
+                        <i class="fab fa-whatsapp"></i> Agendar via WhatsApp
+                    </a>
+                </div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalidade">Modalidade preferida *</label>
+                        <select id="modalidade" name="modalidade" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="presencial">Presencial (Bauru-SP)</option>
+                            <option value="online">Online (Google Meet)</option>
+                            <option value="indefinido">Ainda não sei</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem (opcional)</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o que gostaria de trabalhar na terapia..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Enviar solicitação
+                    </button>
+                    
+                    <p style="font-size: 14px; color: var(--cor-texto-claro); margin-top: 20px; text-align: center;">
+                        Entrarei em contato em até 24 horas para confirmar o agendamento.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER ELEGANTE -->
+<footer class="footer">
+    <!-- Elemento decorativo granulado -->
+    <div class="footer-granulado"></div>
+    
+    <div class="container">
+        <div class="footer-content">
+            <h3 class="footer-logo">Rosângela Valentim</h3>
+            <p class="footer-text">Psicanalista Clínica<br>Especializada em Psicanálise, Inteligência Emocional e Desenvolvimento Pessoal</p>
+            
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contato@rosangelapsicanalista.com.br</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(11) 99999-9999</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bauru - São Paulo</span>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 Rosângela Valentim – Psicanalista Clínica. Todos os direitos reservados.<br>
+                Desenvolvido com ❤️ para o cuidado emocional.
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <script>
+    // Aguardar o DOM carregar completamente
+    document.addEventListener('DOMContentLoaded', function() {
+        // Elementos principais
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navbar = document.querySelector('.navbar');
+        const contactForm = document.getElementById('contactForm');
+        const telefoneInput = document.getElementById('telefone');
+        const navIndicator = document.getElementById('navIndicator');
+        
+        // Verificar se elementos existem antes de usar
+        if (!mobileMenu || !navbar || !contactForm || !telefoneInput) {
+            console.warn('Alguns elementos não foram encontrados no DOM');
+            return;
+        }
+        
+        // ========== MENU MOBILE ==========
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            // Prevenir scroll quando menu estiver aberto
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Permitir comportamento normal para links externos
+                if (link.getAttribute('href').startsWith('http')) return;
+                
+                e.preventDefault();
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Scroll suave para links internos
+                const targetId = link.getAttribute('href');
+                if (targetId && targetId.startsWith('#')) {
+                    scrollToSection(targetId);
+                }
+            });
+        });
+        
+        // ========== SCROLL SUAVE ==========
+        function scrollToSection(targetId) {
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (!targetElement) return;
+            
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Adicionar scroll suave para todos os links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Permitir comportamento normal para links externos
+                if (this.getAttribute('href').startsWith('http')) return;
+                
+                e.preventDefault();
+                scrollToSection(this.getAttribute('href'));
+            });
+        });
+        
+        // ========== NAVBAR SCROLL EFFECT ==========
+        let scrollTimeout;
+        function handleNavbarScroll() {
+            // Debounce para melhor performance
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+                updateNavIndicator();
+            }, 10);
+        }
+        
+        // ========== FORMULÁRIO DE CONTATO ==========
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome')?.value;
+            const modalidade = document.getElementById('modalidade')?.value;
+            
+            if (!nome || !modalidade) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            // Simulação de envio
+            alert(`Obrigada, ${nome}! Sua solicitação de agendamento para consulta ${modalidade === 'presencial' ? 'presencial' : 'online'} foi enviada com sucesso. Entrarei em contato em breve para confirmar os detalhes.`);
+            
+            // Reset do formulário
+            contactForm.reset();
+        }
+        
+        // ========== FUNÇÃO PARA ROLAR ATÉ CONTATO ==========
+        function scrollToContact() {
+            const contatoSection = document.getElementById('contato');
+            if (contatoSection) {
+                window.scrollTo({
+                    top: contatoSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // ========== ANIMAÇÕES DE ENTRADA AO SCROLL ==========
+        let animationElements;
+        function checkVisibility() {
+            if (!animationElements || animationElements.length === 0) {
+                animationElements = document.querySelectorAll('.fade-in, .stagger-item');
+            }
+            
+            animationElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // ========== MÁSCARA PARA TELEFONE ==========
+        function applyPhoneMask(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 10) {
+                value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+            } else if (value.length > 6) {
+                value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+            } else if (value.length > 2) {
+                value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+            } else if (value.length > 0) {
+                value = value.replace(/^(\d*)/, '($1');
+            }
+            
+            e.target.value = value;
+        }
+        
+        // ========== ATUALIZAR INDICADOR DE NAVEGAÇÃO ==========
+        function updateNavIndicator() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            const mobileLinks = document.querySelectorAll('.mobile-menu a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            // Atualizar links do menu desktop
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                    
+                    // Atualizar posição do indicador
+                    if (navIndicator && window.innerWidth > 768) {
+                        const linkRect = link.getBoundingClientRect();
+                        const navRect = document.querySelector('.nav-menu')?.getBoundingClientRect();
+                        
+                        if (navRect) {
+                            navIndicator.style.width = `${linkRect.width}px`;
+                            navIndicator.style.left = `${linkRect.left - navRect.left}px`;
+                            navIndicator.style.opacity = '1';
+                        }
+                    }
+                }
+            });
+            
+            // Atualizar links do menu mobile
+            mobileLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Esconder indicador se não houver seção ativa
+            if (!currentSection && navIndicator) {
+                navIndicator.style.opacity = '0';
+            }
+        }
+        
+        // ========== FUNÇÃO PARA ALTERNAR FAQ ==========
+        function toggleFAQ(number) {
+            const faqItems = document.querySelectorAll('.faq-item');
+            if (number < 1 || number > faqItems.length) return;
+            
+            const faqItem = faqItems[number - 1];
+            const allFaqItems = document.querySelectorAll('.faq-item');
+            
+            // Fecha todas as outras FAQs
+            allFaqItems.forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Alterna a FAQ clicada
+            faqItem.classList.toggle('active');
+        }
+        
+        // ========== INICIALIZAÇÃO ==========
+        function init() {
+            // Adicionar eventos
+            window.addEventListener('scroll', handleNavbarScroll);
+            window.addEventListener('resize', updateNavIndicator);
+            
+            // Verificar estado inicial
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            
+            // Event listeners
+            contactForm.addEventListener('submit', handleFormSubmit);
+            
+            // Máscara de telefone
+            telefoneInput.addEventListener('input', applyPhoneMask);
+            
+            // Adicionar eventos de teclado para acessibilidade
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const faqItem = this.closest('.faq-item');
+                        if (faqItem) {
+                            faqItem.classList.toggle('active');
+                        }
+                    }
+                });
+                
+                // Adicionar role para acessibilidade
+                question.setAttribute('role', 'button');
+                question.setAttribute('tabindex', '0');
+            });
+            
+            // Verificar elementos visíveis
+            checkVisibility();
+            window.addEventListener('scroll', checkVisibility);
+            
+            // Atualizar indicador
+            updateNavIndicator();
+        }
+        
+        // Inicializar
+        init();
+        
+        // ========== EXPORTAÇÃO DE FUNÇÕES GLOBAIS ==========
+        // Funções que precisam ser acessíveis globalmente
+        window.toggleMenu = toggleMenu;
+        window.scrollToContact = scrollToContact;
+        window.toggleFAQ = toggleFAQ;
+    });
+</script>
+</body>
+</html>
