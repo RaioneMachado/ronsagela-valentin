@@ -55,7 +55,7 @@ body {
 /* ===== NAVBAR - VERSÃO MELHORADA ===== */
 .navbar {
   background-color: rgba(248, 250, 245, 0.98);
-  padding: 22px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -67,7 +67,7 @@ body {
 }
 
 .navbar.scrolled {
-  padding: 16px 0;
+  padding: 14px 0;
   box-shadow: 0 6px 25px rgba(77, 81, 49, 0.12);
   background-color: rgba(248, 250, 245, 0.98);
   border-bottom-color: rgba(107, 142, 94, 0.15);
@@ -79,27 +79,29 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 600;
-  color: #4D5131;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* LOGO - COM ESPECIFICIDADE AUMENTADA */
+a.logo .logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   transition: all 0.3s ease;
-  position: relative;
-  letter-spacing: -0.3px;
 }
 
-.logo-icon {
-  color: #6B8E5E;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
-  background: linear-gradient(135deg, #6B8E5E, #4D5131);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 600;
+  color: #4D5131;
+  letter-spacing: -0.3px;
   transition: all 0.3s ease;
 }
 
@@ -107,14 +109,18 @@ body {
   transform: translateY(-2px);
 }
 
-.logo:hover .logo-icon {
-  transform: rotate(10deg) scale(1.1);
+.logo:hover .logo-img {
+  transform: rotate(10deg) scale(1.05);
+}
+
+.logo:hover .logo-text {
+  color: #6B8E5E;
 }
 
 .logo::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: -8px;
   left: 0;
   width: 0;
   height: 2px;
@@ -127,6 +133,9 @@ body {
   width: 100%;
 }
 
+/* RESTO DO CSS MANTIDO IGUAL... */
+
+/* MENU NAVEGAÇÃO */
 .nav-menu {
   display: flex;
   gap: 40px;
@@ -177,6 +186,7 @@ body {
   transform: scaleX(1);
 }
 
+/* BOTÃO AGENDAR */
 .btn-agendar {
   background: linear-gradient(135deg, #6B8E5E, #5A7A4E);
   color: var(--cor-branco);
@@ -225,6 +235,7 @@ body {
   box-shadow: 0 4px 12px rgba(107, 142, 94, 0.25);
 }
 
+/* MENU MOBILE */
 .menu-mobile {
   display: none;
   font-size: 26px;
@@ -250,6 +261,99 @@ body {
   box-shadow: 0 4px 12px rgba(77, 81, 49, 0.12);
 }
 
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .nav-menu {
+    gap: 25px;
+  }
+  
+  .nav-menu a {
+    font-size: 14px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo-text {
+    font-size: 21px;
+  }
+  
+  .btn-agendar {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  .nav-menu {
+    display: none;
+  }
+  
+  .menu-mobile {
+    display: flex;
+  }
+  
+  .logo {
+    gap: 20px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo-text {
+    font-size: 19px;
+  }
+}
+
+/* Mobile pequeno (até 575px) */
+@media (max-width: 575px) {
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  .navbar.scrolled {
+    padding: 10px 0;
+  }
+  
+  .logo {
+    gap: 10px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .logo-text {
+    font-size: 17px;
+    letter-spacing: -0.2px;
+  }
+  
+  .menu-mobile {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+}
+
+/* Para telas muito grandes (desktop grande) */
+@media (min-width: 1400px) {
+  .logo-img {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .logo-text {
+    font-size: 26px;
+  }
+}
 /* ===== MOBILE MENU MELHORADO ===== */
 .mobile-menu {
   position: fixed;
