@@ -37,9 +37,9 @@
             <a href="#diferenciais">Diferenciais</a>
             <a href="#atendimento">Atendimento</a>
             <a href="#contato">Contato</a>
-            <button class="btn-agendar" onclick="scrollToContact()">
-                <i class="fas fa-calendar-check"></i> Agendar Sessão
-            </button>
+            <button class="btn-agendar" onclick="window.open('https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma sessão com a psicanalista Rosângela Valentim.', '_blank')">
+    <i class="fas fa-calendar-check"></i> Agendar Sessão
+</button>
         </nav>
         <div class="menu-mobile" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
@@ -73,10 +73,10 @@
             <p>Com formação em <strong>Psicanálise Clínica</strong>, <strong>Inteligência Emocional</strong> e <strong>Teologia</strong>, ofereço um atendimento humanizado e empático, criando um espaço seguro para explorar suas emoções e promover autoconhecimento.</p>
             
             <div class="hero-btns">
-                <a href="#contato" class="btn-primary">
-                    <i class="fas fa-calendar-alt"></i> Agendar Consulta
-                </a>
-            </div>
+    <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank">
+        <i class="fas fa-calendar-alt"></i> Agendar Consulta
+    </a>
+</div>
         </div>
         <div class="hero-img fade-in">
             <img src="imagens/ronsagela.jpeg" alt="Psicanalista Rosângela Valentim" />
@@ -215,10 +215,10 @@
         </div>
         
         <div class="diferenciais-btn">
-            <a href="#contato" class="btn-primary">
-                <i class="fas fa-calendar-alt"></i> Agendar sua consulta
-            </a>
-        </div>
+    <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank">
+        <i class="fas fa-calendar-alt"></i> Agendar sua consulta
+    </a>
+</div>
     </div>
 </section>
 
@@ -256,9 +256,9 @@
                     
                     <p class="destaque">Conexão humana em um espaço físico dedicado ao seu bem-estar</p>
                     
-                    <a href="#contato" class="card-link">
-                        <i class="fas fa-calendar-alt"></i> Agendar consulta presencial
-                    </a>
+                    <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta presencial com a psicanalista Rosângela Valentim." class="card-link" target="_blank">
+    <i class="fas fa-calendar-alt"></i> Agendar consulta presencial
+</a>
                 </div>
             </div>
 
@@ -284,9 +284,9 @@
                     
                     <p class="destaque">Terapia acessível, onde quer que você esteja</p>
                     
-                    <a href="#contato" class="card-link">
-                        <i class="fas fa-calendar-alt"></i> Agendar consulta online
-                    </a>
+                    <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta online com a psicanalista Rosângela Valentim." class="card-link" target="_blank">
+    <i class="fas fa-calendar-alt"></i> Agendar consulta online
+</a>
                 </div>
             </div>
         </div>
@@ -359,9 +359,9 @@
         </div>
         
         <div class="sobre-btn">
-            <a href="#contato" class="btn-primary">
-                <i class="fas fa-calendar-alt"></i> Agendar sua consulta de autoconhecimento
-            </a>
+            <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta de autoconhecimento com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank">
+    <i class="fas fa-calendar-alt"></i> Agendar sua consulta de autoconhecimento
+</a>
         </div>
     </div>
 </section>
@@ -502,13 +502,8 @@
             Não encontrou resposta para sua dúvida? Entre em contato diretamente – estou aqui para ajudar!
         </div>
         
-        <div class="faq-btn">
-            <a href="#contato" class="btn-primary">
-                <i class="fas fa-comments"></i> Falar diretamente comigo
-            </a>
-        </div>
+    
     </div>
-</section>
     <!-- CONTATO -->
     <section id="contato" class="contato" style="background-color: var(--cor-fundo);">
         <div class="container">
@@ -520,12 +515,13 @@
             
             <div class="contact-form">
                 <div style="text-align: center; margin-bottom: 30px;">
-                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank" style="text-decoration: none;">
-                        <i class="fab fa-whatsapp"></i> Agendar via WhatsApp
-                    </a>
+                    <a href="https://wa.me/5511975873238?text=Olá! Gostaria de agendar uma consulta com a psicanalista Rosângela Valentim." class="btn-primary" target="_blank" style="text-decoration: none;">
+    <i class="fab fa-whatsapp"></i> Agendar via WhatsApp
+</a>
                 </div>
                 
-                <form id="contactForm">
+                <!-- FORMULÁRIO ESCONDIDO (não removido) -->
+                <form id="contactForm" style="display: none !important; visibility: hidden !important; height: 0 !important; overflow: hidden !important;">
                     <div class="form-group">
                         <label for="nome">Nome completo *</label>
                         <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
@@ -559,11 +555,11 @@
                     <button type="submit" class="btn-primary" style="width: 100%;">
                         <i class="fas fa-paper-plane"></i> Enviar solicitação
                     </button>
-                    
-                    <p style="font-size: 14px; color: var(--cor-texto-claro); margin-top: 20px; text-align: center;">
-                        Entrarei em contato em até 24 horas para confirmar o agendamento.
-                    </p>
                 </form>
+                
+                <p style="font-size: 14px; color: var(--cor-texto-claro); margin-top: 20px; text-align: center;">
+                    Entrarei em contato em até 24 horas para confirmar o agendamento.
+                </p>
             </div>
         </div>
     </section>
